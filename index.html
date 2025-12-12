@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karvir Tours - Digital Transformation Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script>
+      // Polyfill process for libraries that expect it
+      window.process = { env: { NODE_ENV: 'production' } };
+
+      tailwind.config = {
+        darkMode: ["class"],
+        theme: {
+          container: {
+            center: true,
+            padding: "2rem",
+            screens: {
+              "2xl": "1400px",
+            },
+          },
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              script: ['"Kaushan Script"', 'cursive'],
+            },
+            colors: {
+              border: "hsl(217 33% 17%)", // slate-800
+              input: "hsl(217 33% 17%)",
+              ring: "hsl(199 89% 48%)", // brand-500
+              background: "hsl(222 47% 11%)", // slate-950
+              foreground: "hsl(210 40% 98%)", // slate-50
+              primary: {
+                DEFAULT: "hsl(199 89% 48%)", // brand-500
+                foreground: "hsl(210 40% 98%)",
+              },
+              secondary: {
+                DEFAULT: "hsl(217 33% 17%)", // slate-800
+                foreground: "hsl(210 40% 98%)",
+              },
+              destructive: {
+                DEFAULT: "hsl(0 62.8% 30.6%)",
+                foreground: "hsl(210 40% 98%)",
+              },
+              muted: {
+                DEFAULT: "hsl(217 33% 17%)",
+                foreground: "hsl(215 20.2% 65.1%)", // slate-400
+              },
+              accent: {
+                DEFAULT: "hsl(217 33% 17%)",
+                foreground: "hsl(210 40% 98%)",
+                500: '#10b981', // Existing emerald
+              },
+              popover: {
+                DEFAULT: "hsl(222 47% 11%)",
+                foreground: "hsl(210 40% 98%)",
+              },
+              card: {
+                DEFAULT: "hsl(217 33% 17%)",
+                foreground: "hsl(210 40% 98%)",
+              },
+              brand: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                900: '#0c4a6e',
+              },
+            },
+            borderRadius: {
+              lg: "0.5rem",
+              md: "calc(0.5rem - 2px)",
+              sm: "calc(0.5rem - 4px)",
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { background-color: #0f172a; color: #f8fafc; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-router": "https://esm.sh/react-router@6.22.3?external=react",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom,react-router",
+    "@remix-run/router": "https://esm.sh/@remix-run/router@1.15.3",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react",
+    "framer-motion": "https://esm.sh/framer-motion@10.18.0?external=react,react-dom",
+    "clsx": "https://esm.sh/clsx@2.1.0",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@2.2.1",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.16?external=react,react-dom,three",
+    "@radix-ui/react-slot": "https://esm.sh/@radix-ui/react-slot@1.0.2?external=react",
+    "class-variance-authority": "https://esm.sh/class-variance-authority@0.7.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
